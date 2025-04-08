@@ -1,0 +1,26 @@
+Tar Command in Linux with Examples:
+
+Example 1: Creating a Tar Archive
+   Command: tar -czf myarchive.tar.gz myfolder
+
+Example 2: Creating an Uncompressed Archive using tar Command
+   Command: tar cvf archive_name.tar abc def
+
+Example 3: Creating a Compressed Archive using tar Command
+   (i) Gzipped Tar:
+       Command: tar cvzf archive_name.tar.gz abc/
+   (ii) Bzipped Tar:
+       Command: tar cvfj archive_name.tar.bz2 abc/
+
+Example 4: Extracting Files from an Archive
+   Command: tar xvf archive_name.tar
+
+Example 5: Extracting a Compressed Tar Archive
+   (i) Extracting a Gzipped Tar:
+       Command: tar xvfz archive_name.tar.gz
+   (ii) Extracting a Bzipped Tar:
+       Command: tar xvfj archive_name.tar.bz2
+
+Example 6: Listing an Uncompressed Archive using the Tar Command
+   Command: tar tvf archive_name.tar
+
