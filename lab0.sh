@@ -1,18 +1,19 @@
-1. How to create a directory in Unix?
-   Command: mkdir 
+#!/bin/bash
 
-2. How to create a subdirectory within a directory?
-   Command: mkdir 423174/UNIX
+# 1. Creating a directory
+mkdir new_directory
 
-3. How to change the current directory to a subdirectory?
-   Command: cd 423174/UNIX
+# 2. Creating a subdirectory within a directory
+mkdir 423174/UNIX
 
-4. How to display the calendar for the current month?
-   Command: cal
+# 3. Changing the current directory to a subdirectory
+cd 423174/UNIX
 
-5. How to list the files in the parent directory?
-   Command: ls ..
+# 4. Displaying the calendar for the current month
+cal
 
-6. How to find the number of users currently logged in?
-   Command: who | wc -l
+# 5. Listing the files in the parent directory
+ls ..
 
+# 6. Finding the number of users currently logged in
+who | wc -l
