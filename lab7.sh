@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # 1. Install CVS
 sudo apt install cvs
 
@@ -8,14 +10,16 @@ cd cvsproject
 cd ..
 
 # 3. Initialize CVS repository
+# Using relative path
 cvs -d ~/cvsrepo init
-# Or using full path (absolute CVSROOT)
+# Or using absolute path
 cvs -d /home/student/cvsrepo init
 
 # 4. Handle import errors
-# If CVSROOT is not absolute
+# Example of an invalid CVSROOT
+echo "Bad CVSROOT Example:"
 cvs -d cvsproject init
-# Output: Bad CVSROOT: 'cvsproject'
+echo "Output: Bad CVSROOT: 'cvsproject'"
 
 # 5. Create project directory and files
 mkdir myproject
@@ -47,4 +51,3 @@ cvs update -j branch1
 
 # 12. Check differences
 cvs diff
-
